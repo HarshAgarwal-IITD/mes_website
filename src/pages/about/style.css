@@ -1,5 +1,106 @@
+/* Background styling */
 .full-height-content {
-    background-color:#001330;
-    height:100%;
+  background: linear-gradient(135deg, #001330, #002244);
+  /* background-image: url("/public/image/About_bg.jpg");
+  background-size:contain; */
+  height: 100%;
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Styling for headings */
+.full-height-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  color: #ffcc00;
+  transition: all 0.3s ease;
+}
+
+.full-height-content h2 {
+  font-size: 2.5rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  color: #ffcc00;
+  transition: all 0.3s ease;
+}
+
+/* Styling for paragraphs */
+.full-height-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.85);
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+/* Link styling */
+.full-height-content a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.full-height-content a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Ordered list styling */
+.full-height-content ol {
+  list-style-type: decimal;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.full-height-content li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Add some hover effect for headings */
+.full-height-content h1:hover, .full-height-content h2:hover {
+  color: #ffffff;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
+  transform: translateY(-5px);
+}
+
+/* Smooth transitions */
+.full-height-content * {
+  transition: all 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .full-height-content {
+    padding: 30px;
   }
 
+  .full-height-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .full-height-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .full-height-content p {
+    font-size: 1rem;
+  }
+}
