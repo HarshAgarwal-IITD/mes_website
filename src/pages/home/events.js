@@ -64,7 +64,7 @@ function Events(){
                         </div>
                     </Box>
                 </div>
-                {/* <div className='position-absolute text-black d-flex align-items-center  ' style={{top:"15%", left:"17.5%", height:"70%", width:"65%"}}>
+                 {/* <div className='position-absolute text-black d-flex align-items-center  ' style={{top:"15%", left:"17.5%", height:"70%", width:"65%"}}>
                     <div className='bg-white h-100 w-100 d-flex flex-row align-items-center ' style={{border:"2px", borderRadius:"30px", borderColor:"#FFFFFF"}}>
                         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner">
@@ -88,35 +88,40 @@ function Events(){
                         </button>
                         </div>
                     </div>
-                </div> */}
-            </div>
-            <div className='position-absolute w-100 vh-100 z-2 top-0 start-0 d-flex flex-column align-items-center justify-content-center'>
-            <div className='position-absolute text-black d-flex align-items-center  ' style={{top:"15%", left:"17.5%", height:"70%", width:"65%"}}>
-                    <div className='bg-white h-100 w-100 d-flex flex-row align-items-center ' style={{border:"2px", borderRadius:"30px", borderColor:"#FFFFFF"}}>
-                        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                            <img src="/image/Events.png" className="d-block w-100 h-100" alt="..."/>
-                            </div>
-                            <div className="carousel-item">
-                            <img src="/image/Upper-Background.png" className="d-block w-100 h-100 " alt="..."/>
-                            </div>
-                            <div className="carousel-item">
-                            <img src="/image/Lower-Background.png" className="d-block w-100 h-100" alt="..."/>
-                            </div>
-                        </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                        </div>
-                    </div>
+                </div>  */}
+                <div className='position-absolute text-white d-flex align-items-center' style={{ top: "15%", left: "17.5%", height: "70%", width: "65%" }}>
+    <div className='bg-dark-blue h-100 w-100 d-flex flex-row align-items-center' style={{ borderRadius: "30px", backgroundColor: "#001F3F" }}> {/* Change to dark blue */}
+        <div id="carouselExampleControls" className="carousel slide h-100 w-100" data-bs-ride="carousel">
+            <div className="carousel-inner h-100">
+                <div className="carousel-item active h-100">
+                <h3 className='bg-dark-blue text-center'>Farewell </h3>
+                    <img src="/image/Farewell.jpg" className="d-block w-100 h-100" alt="..." />
+                </div>
+                <div className="carousel-item h-100">
+                    <h3 className='bg-dark-blue text-center'>Freshers Party</h3>
+                    <img src="/image/FreshersParty.JPG" className="d-block w-100 h-100" alt="..." />
+                </div>
+                <div className="carousel-item h-100">
+                <h3 className='bg-dark-blue text-center'>Departmental Trip</h3>
+                    <img src="/image/departmentalTrip.jpg" className="d-block w-100 h-100" alt="..." />
                 </div>
             </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+                 
+  
+            </div>
+            
         </div>
     )
 }
