@@ -1,21 +1,19 @@
 import React, { useState } from 'react';
-import { Grid, Card, CardContent, Typography, Button, Pagination } from '@mui/material';
+import { Grid, Card, Button, Pagination } from '@mui/material';
 
 const EventCards = ({ type }) => {
-
   const currentDate = new Date().toJSON().slice(0, 10);
 
   const data = [
-    { imageUrl: '/image/HOD.jpeg', buttonText: "Register", date: new Date("2024-03-12").toJSON().slice(0, 10) },
-    { imageUrl: '/image/HOD.jpeg', buttonText: "Register", date: new Date("2024-03-11").toJSON().slice(0, 10) },
-    { imageUrl: '/image/HOD.jpeg', buttonText: "Register", date: new Date("2024-03-25").toJSON().slice(0, 10) },
-    { imageUrl: '/image/HOD.jpeg', buttonText: "Register", date: new Date("2024-03-22").toJSON().slice(0, 10) },
-    { imageUrl: '/image/HOD.jpeg', buttonText: "Register", date: new Date("2024-03-23").toJSON().slice(0, 10) },
-    { imageUrl: '/image/HOD.jpeg', buttonText: "Register", date: new Date("2024-03-02").toJSON().slice(0, 10) },
-    { imageUrl: '/image/HOD.jpeg', buttonText: "Register", date: new Date("2024-03-27").toJSON().slice(0, 10) },
-    { imageUrl: '/image/HOD.jpeg', buttonText: "Register", date: new Date("2024-03-03").toJSON().slice(0, 10) },
-    { imageUrl: '/image/HOD.jpeg', buttonText: "Register", date: new Date("2024-03-20").toJSON().slice(0, 10) },
-    // Add more data as needed
+    { imageUrl: '/image/UG-Freshers.jpg', buttonText: "UG Orientation", date: new Date("2024-03-12").toJSON().slice(0, 10), targetUrl: '/ug-orientation' },
+    { imageUrl: '/image/PG-Freshers_temp.jpg', buttonText: "PG Orientation", date: new Date("2024-03-11").toJSON().slice(0, 10), targetUrl: '/pg-orientation' },
+    { imageUrl: '/image/Industry-visit.jpg', buttonText: "Industry Visit", date: new Date("2024-03-25").toJSON().slice(0, 10), targetUrl: '/industry-visit' },
+    { imageUrl: '/image/Time-capsule.jpg', buttonText: "Time Capsule", date: new Date("2025-03-22").toJSON().slice(0, 10), targetUrl: '/time-capsule' },
+    { imageUrl: '/image/Department-trip.jpg', buttonText: "Departmental Trip", date: new Date("2025-03-23").toJSON().slice(0, 10), targetUrl: '/departmental-trip' },
+    { imageUrl: '/image/CAD.jpg', buttonText: "CAD Competition", date: new Date("2025-03-02").toJSON().slice(0, 10), targetUrl: '/cad-competition' },
+    { imageUrl: '/image/relay-race.avif', buttonText: "Engineering Relay Race", date: new Date("2025-03-27").toJSON().slice(0, 10), targetUrl: '/relay-race' },
+    { imageUrl: '/image/egg.jpeg', buttonText: "Don't Break the Egg", date: new Date("2025-03-03").toJSON().slice(0, 10), targetUrl: '/egg-break' },
+    { imageUrl: '/image/study-beyond-borders.jpeg', buttonText: "Study Beyond Borders", date: new Date("2025-03-20").toJSON().slice(0, 10), targetUrl: '/study-beyond-borders' },
   ];
 
   const [page, setPage] = useState(1);
@@ -26,16 +24,12 @@ const EventCards = ({ type }) => {
   };
 
   const handleButtonClick = (buttonText) => {
-    // Handle button click for the specific event
     console.log(`Button clicked: ${buttonText}`);
   };
 
-  const handleImageClick = () =>{
-    console.log('Hello');
-    const origin = window.origin;
-    console.log(origin);
-    window.location.href = `${origin+'/test'}`;
-  }
+  const handleImageClick = (targetUrl) => {
+    // window.location.href = targetUrl; // Commented out redirection logic
+  };
 
   let filteredData = [];
   if (type === "past") {
@@ -52,70 +46,74 @@ const EventCards = ({ type }) => {
 
   return (
     <div className='d-flex w-100 flex-column gap-4'>
-      <Grid container spacing={10} sx={{width:"80%",padding: '20px', marginLeft:"7.5%"}}> {/* Adjust spacing and padding */}
+      <Grid container spacing={10} sx={{ width: "80%", padding: '20px', marginLeft: "7.5%" }}>
         {visibleData.map((item, index) => (
           <Grid key={index} item xs={12} sm={6} md={4}>
-            <Card sx={{borderRadius:"20px"}}>
+            <Card sx={{ borderRadius: "20px" }}>
               
               <img
                 src={item.imageUrl}
-                onClick={()=>{
-                  handleImageClick();
-                }}
+                onClick={() => handleImageClick(item.targetUrl)}
                 alt={`Event ${index + 1}`}
-                style={{ cursor: 'pointer', width: '100%' }}
+                style={{
+                  /* cursor: 'pointer', */
+                  width: '100%',
+                  height: '200px',     // Set a fixed height for the images
+                  objectFit: 'cover'   // Ensures that images fill the space without being distorted
+                }}  
               />
 
               <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={() => handleButtonClick(item.buttonText)}
-                  style={{
-                   width:"100%", 
-                   backgroundImage:"linear-gradient(#123261,#1E56A9)", 
-                   borderRadius:"0px", 
-                   fontSize:"20px",
-                  fontFamily:"sarpanch" }}
-                >
-                  {item.buttonText}
-                </Button>
+                variant="contained"
+                color="primary"
+                onClick={() => handleButtonClick(item.buttonText)}
+                style={{
+                  width: "100%",
+                  backgroundImage: "linear-gradient(#123261,#1E56A9)",
+                  borderRadius: "0px",
+                  fontSize: "20px",
+                  fontFamily: "sarpanch"
+                }}
+              >
+                {item.buttonText}
+              </Button>
             </Card>
           </Grid>
         ))}
       </Grid>
       <div className='d-flex flex-row w-100 justify-content-center'>
         {totalPages > 1 && (
-          <div className='d-inline-flex' >
+          <div className='d-inline-flex'>
             <Pagination
-            count={totalPages}
-            page={page}
-            onChange={handlePageChange}
-            color="primary"
-            sx={{
-            display: 'flex', 
-            justifyContent: 'center',
-            border: "1px solid",
-            borderColor: "#00C2FF",
-            borderRadius: "10px",
-            height:"50px",
-            '& .Mui-selected': {
-              color: '#426EAF !important', // Selected page number color
-              backgroundColor: "transparent !important",
-            },
-            '& .MuiPaginationItem-root': {
-              color: 'white', // Rest of the page numbers color
-              fontSize: "30px !important",
-              fontFamily: "sarpanch !important",
-              width:"50px"
-            },
-            '& .MuiPaginationItem-icon': {
-              color: 'white', // Rest of the page numbers color
-              fontSize: "30px !important",
-              fontFamily: "sarpanch !important",
-              height:"30px"
-            },
-          }}
-          />
+              count={totalPages}
+              page={page}
+              onChange={handlePageChange}
+              color="primary"
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                border: "1px solid",
+                borderColor: "#00C2FF",
+                borderRadius: "10px",
+                height: "50px",
+                '& .Mui-selected': {
+                  color: '#426EAF !important',
+                  backgroundColor: "transparent !important",
+                },
+                '& .MuiPaginationItem-root': {
+                  color: 'white',
+                  fontSize: "30px !important",
+                  fontFamily: "sarpanch !important",
+                  width: "50px"
+                },
+                '& .MuiPaginationItem-icon': {
+                  color: 'white',
+                  fontSize: "30px !important",
+                  fontFamily: "sarpanch !important",
+                  height: "30px"
+                },
+              }}
+            />
           </div>
         )}
       </div>
@@ -124,15 +122,3 @@ const EventCards = ({ type }) => {
 };
 
 export default EventCards;
-
-// <CardContent sx={{ padding:''}}>
-// <Typography variant="h6" component="h2">
-//   Event {index + 1 + (page - 1) * itemsPerPage}
-//   {item.date}
-// </Typography>
-// <Typography color="textSecondary">
-//   Description of Event {index + 1 + (page - 1) * itemsPerPage}
-// </Typography>
-
-// {/* Button below the image */}
-// </CardContent>
