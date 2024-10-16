@@ -31,12 +31,46 @@ function Notes() {
                     backgroundColor:"#001330",
                 }}
                 >
-                    <Note/>
-                    <Note/>
-                    <Note/>
+                   <Note 
+  Name="Prof. P.M.V Subbarao"
+  Text={`Head of Mechanical Department
+Areas of Interest:
+Experimental Turbulence, Tomography, Power Generation Systems and I.C. Engines
+Courses and Modules:
+MCL106 Fluid Mechanics
+MCL346 Turbomachinery
+Office: Block 2, Room No. 264 and Block 3, Room No. 255.`}
+  Image="/image/HOD.jpeg"
+/>
+<Note 
+  Name="Prof. Anurag Goyal"
+  Text={`Faculty Coordinator - MES
+Areas of Interest:
+Thermo-fluid Systems, Heat Transfer, Refrigeration and Airconditioning, Waste-heat
+Recovery, Thermal Energy Storage,
+Building Energy Efficiency, Water Purification and Desalination
+Courses and Modules:
+MCL242 : Heat and Mass Transfer
+Office: VA 10`}
 
+  Image="/image/HOD.jpeg"
+/>
+<Note 
+  Name="Prof. Naresh Datla"
+  Text="OCS Coordinator
+Areas of Interest:
+Fracture and fatigue, Adhesion and adhesives,
+Tissue-device interaction mechanics
+Courses and Modules:
+MCL104 Solid Mechanics (Moodle)
+Mechanical Behaviour of Polymers and Composites (NPTEL)
+Engineering Graphics and Design (NPTEL)
+Office: Block III, Room No. 367
+"
+  Image="/image/HOD.jpeg"
+/>
 
-                </Box>
+   </Box>
             </Box>
             </div>
         </div>
