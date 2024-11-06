@@ -41,6 +41,12 @@ function Navbar(prop){
                         id="navbar-team" onClick={() => {
                             handleClick('team')
                         }}>Team</div>
+                        <div 
+                        style={{cursor:"pointer"}}
+                        className={currentPage === 'About' ? 'current-page' : ''}
+                        id="navbar-about" onClick={() => {
+                            handleClick('about')
+                        }}>About</div>
                     </div>
                 </div>
 
