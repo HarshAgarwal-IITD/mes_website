@@ -6,13 +6,13 @@ const EventCards = ({ type }) => {
 
   const data = [
     { imageUrl: '/image/UG-Freshers.jpg', buttonText: "UG Orientation", date: new Date("2024-03-12").toJSON().slice(0, 10), targetUrl: '/ug-orientation' },
-    { imageUrl: '/image/PG-Freshers_temp.jpg', buttonText: "PG Orientation", date: new Date("2024-03-11").toJSON().slice(0, 10), targetUrl: '/pg-orientation' },
+    { imageUrl: '/image/pg.jpeg', buttonText: "PG Orientation", date: new Date("2024-03-11").toJSON().slice(0, 10), targetUrl: '/pg-orientation' },
     { imageUrl: '/image/Industry-visit.jpg', buttonText: "Industry Visit", date: new Date("2024-03-25").toJSON().slice(0, 10), targetUrl: '/industry-visit' },
     { imageUrl: '/image/Time-capsule.jpg', buttonText: "Time Capsule", date: new Date("2025-03-22").toJSON().slice(0, 10), targetUrl: '/time-capsule' },
     { imageUrl: '/image/Department-trip.jpg', buttonText: "Departmental Trip", date: new Date("2025-03-23").toJSON().slice(0, 10), targetUrl: '/departmental-trip' },
-    { imageUrl: '/image/CAD.jpg', buttonText: "CAD Competition", date: new Date("2025-03-02").toJSON().slice(0, 10), targetUrl: '/cad-competition' },
+    { imageUrl: '/image/cad.jpeg', buttonText: "CAD Competition", date: new Date("2025-03-02").toJSON().slice(0, 10), targetUrl: '/cad-competition' },
     { imageUrl: '/image/relay-race.avif', buttonText: "Engineering Relay Race", date: new Date("2025-03-27").toJSON().slice(0, 10), targetUrl: '/relay-race' },
-    { imageUrl: '/image/egg.jpeg', buttonText: "Don't Break the Egg", date: new Date("2025-03-03").toJSON().slice(0, 10), targetUrl: '/egg-break' },
+    { imageUrl: '/image/egg1.jpeg', buttonText: "Don't Break the Egg", date: new Date("2025-03-03").toJSON().slice(0, 10), targetUrl: '/egg-break' },
     { imageUrl: '/image/study-beyond-borders.jpeg', buttonText: "Study Beyond Borders", date: new Date("2025-03-20").toJSON().slice(0, 10), targetUrl: '/study-beyond-borders' },
   ];
 
@@ -56,10 +56,9 @@ const EventCards = ({ type }) => {
                 onClick={() => handleImageClick(item.targetUrl)}
                 alt={`Event ${index + 1}`}
                 style={{
-                  /* cursor: 'pointer', */
-                  width: '100%',
-                  height: '200px',     // Set a fixed height for the images
-                  objectFit: 'cover'   // Ensures that images fill the space without being distorted
+                  width: '100%',        // Ensures image takes full width of the card
+                  height: '200px',       // Fixed height for consistency
+                  objectFit: 'cover'     // Fills the area, cropping if necessary
                 }}  
               />
 
