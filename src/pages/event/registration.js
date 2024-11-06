@@ -3,7 +3,7 @@ export default function Registration(){
         <div className="vw-100 d-flex flex-row gap-5 p-5">
             <div className="d-flex w-50 flex-column justify-content-center position-relative text-white gap-5" >
             <div className="d-flex w-100 fs-5" style={{textAlign:"justify"}}>
-            Lorem IpsumLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the dfkjalfndklsfnalsdnflkasnfdba
+            Event-1
             </div>
             <div className="d-flex flex-row flex-wrap w-100 fs-4">
                 <div className="d-flex flex-column gap-2" style={{minWidth:"50%", width:"50%"}}>
