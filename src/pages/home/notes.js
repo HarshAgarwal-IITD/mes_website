@@ -40,7 +40,7 @@ Courses and Modules:
 MCL106 Fluid Mechanics
 MCL346 Turbomachinery
 Office: Block 2, Room No. 264 and Block 3, Room No. 255.`}
-  Image="/image/HOD.jpeg"
+  Image="/image/profSubbarao.jpg"
 />
 <Note 
   Name="Prof. Anurag Goyal"
@@ -53,7 +53,7 @@ Courses and Modules:
 MCL242 : Heat and Mass Transfer
 Office: VA 10`}
 
-  Image="/image/HOD.jpeg"
+  Image="/image/profAnuragGoyal.jpg"
 />
 <Note 
   Name="Prof. Naresh Datla"
@@ -67,7 +67,7 @@ Mechanical Behaviour of Polymers and Composites (NPTEL)
 Engineering Graphics and Design (NPTEL)
 Office: Block III, Room No. 367
 "
-  Image="/image/HOD.jpeg"
+  Image="/image/profNareshDatla.jpg"
 />
 
    </Box>
