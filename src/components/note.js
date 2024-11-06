@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
 
 // Styled Paper component
 const Item = styled(Paper)(({ theme }) => ({
@@ -20,7 +21,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 // Note component
-function Note({ Name, Image, Text }) {
+function Note({ Name, Image, Text ,link}) {
   return (
     <Item key={20} elevation={20}>
       <div className='d-flex flex-row position-relative' style={{ fontFamily: "sarpanch" }}>
@@ -33,10 +34,13 @@ function Note({ Name, Image, Text }) {
         </div>
         
         {/* Text section */}
-        <div className='d-flex flex-row p-2 mb-1 align-self-end' style={{ zIndex: 0 }}>
+        <div className='d-flex flex-row flex-wrap p-2 mb-1 align-self-end' style={{ zIndex: 0 }}>
           {Text}
+          <Link to={link} target="_blank" rel="noopener noreferrer"> Visit Page</Link>
+          
         </div>
-        
+       
+       
         {/* Image section */}
         <div className='d-flex flex-row p-2' style={{ zIndex: 0, marginTop: "10px", width: "100%" }}>
           <img 

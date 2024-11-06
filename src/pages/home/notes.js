@@ -41,6 +41,7 @@ MCL106 Fluid Mechanics
 MCL346 Turbomachinery
 Office: Block 2, Room No. 264 and Block 3, Room No. 255.`}
   Image="/image/profSubbarao.jpg"
+  link="https://mech.iitd.ac.in/hod-profile/1"
 />
 <Note 
   Name="Prof. Anurag Goyal"
@@ -54,6 +55,7 @@ MCL242 : Heat and Mass Transfer
 Office: VA 10`}
 
   Image="/image/profAnuragGoyal.jpg"
+  link="https://mech.iitd.ac.in/faculty-profile/198"
 />
 <Note 
   Name="Prof. Naresh Datla"
@@ -68,6 +70,7 @@ Engineering Graphics and Design (NPTEL)
 Office: Block III, Room No. 367
 "
   Image="/image/profNareshDatla.jpg"
+  link="https://mech.iitd.ac.in/faculty-profile/183"
 />
 
    </Box>

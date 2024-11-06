@@ -64,7 +64,7 @@ function Team() {
 
                     </div>
                 </div>
-                <br></br>
+                
             </div>
             <Footer/>
 
