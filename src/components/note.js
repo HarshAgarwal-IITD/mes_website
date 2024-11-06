@@ -17,7 +17,9 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'justify',
   backgroundColor: "#001330",
   borderColor: '#00C2FF', // Neon blue border
-  boxShadow: '0 0 10px #00C2FF, 0 0 10px #00C2FF', // Neon blue glow
+  boxShadow: '0 0 10px #00C2FF, 0 0 10px #00C2FF', 
+ 
+  // Neon blue glow
 }));
 
 // Note component
