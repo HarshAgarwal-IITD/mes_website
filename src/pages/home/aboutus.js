@@ -51,7 +51,8 @@ function AboutUs() {
                             <TextField
                                 id="outlined-read-only-input"
                                 label="About Us"
-                                defaultValue="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of. "
+                                defaultValue="Welcome to the Mechanical Engineering Society (MES) at IIT Delhi, where we believe that “Mechanical engineering is not just about machines; it's about making ideas move, turning concepts into reality, and designing the future with precision and innovation.”
+Established to foster a spirit of collaboration and innovation, MES serves as a dynamic platform for students, faculty, and alumni of the Department of Mechanical Engineering.  "
                                 InputProps={{
                                     readOnly: true,
                                     multiline: true,
