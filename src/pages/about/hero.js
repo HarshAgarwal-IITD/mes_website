@@ -5,6 +5,7 @@ import "./style.css";
 export default function Hero() {
   return (
     <div className="full-height-content" >
+      
       <h1 style={{color:"white"}}>MECHANICAL ENGINEERING SOCIETY, IIT DELHI</h1>
         <p style={{color:"white"}}>Welcome to the Mechanical Engineering Society (MES) at IIT Delhi, where we believe that “Mechanical engineering is not just about machines; it's about making ideas move, turning concepts into reality, and designing the future with precision and innovation.”
           <br/>

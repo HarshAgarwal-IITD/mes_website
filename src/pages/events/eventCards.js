@@ -5,7 +5,7 @@ const EventCards = ({ type }) => {
   const currentDate = new Date().toJSON().slice(0, 10);
 
   const data = [
-    { imageUrl: '/image/UG-Freshers.jpg', buttonText: "UG Orientation", date: new Date("2024-03-12").toJSON().slice(0, 10), targetUrl: '/ug-orientation' },
+    { imageUrl: '/image/UG-Freshers.JPG', buttonText: "UG Orientation", date: new Date("2024-03-12").toJSON().slice(0, 10), targetUrl: '/ug-orientation' },
     { imageUrl: '/image/pg.jpeg', buttonText: "PG Orientation", date: new Date("2024-03-11").toJSON().slice(0, 10), targetUrl: '/pg-orientation' },
     { imageUrl: '/image/Industry-visit.jpg', buttonText: "Industry Visit", date: new Date("2024-03-25").toJSON().slice(0, 10), targetUrl: '/industry-visit' },
     { imageUrl: '/image/Time-capsule.jpg', buttonText: "Time Capsule", date: new Date("2025-03-22").toJSON().slice(0, 10), targetUrl: '/time-capsule' },

@@ -10,9 +10,10 @@ return (
             <img id="middle" src="/image/Middle-Gear.png" className="opposite-image"  style={{ position: "absolute", top: "25.5%", left: "7.8%", transform: "translate(-50%, -50%)", height: "40%", width: "auto" }}></img>
             <img id="inner"  src="/image/Inner-Gear.png" className="revolving-image" style={{ position: "absolute", top: "33%", left: "11.9%", transform: "translate(-50%, -50%)", height: "25%", width: "auto" }}></img>
         </div>
+        
 
     </div>
 )
-}
+} 
 
 export default Hero
