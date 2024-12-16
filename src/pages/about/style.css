@@ -1,59 +1,82 @@
-/* Background styling */
+/* Background styling with original bluish color */
 .full-height-content {
-  background: linear-gradient(135deg, #001330, #002244);
-  /* background-image: url("/public/image/About_bg.jpg");
-  background-size:contain; */
+  background: linear-gradient(135deg, #081434, #0d1f36); /* Slightly lighter gradient for depth */
   height: 100%;
   min-height: 100vh;
-  padding: 50px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  /* border-radius: 10px; */
+}
+
+/* Image Styling */
+.hero-image, .section-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
-/* Styling for headings */
+.hero-image:hover, .section-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover for images */
+}
+
+/* Main Styling */
+.full-height-content h1, .full-height-content h2 {
+  color: #f5a623; /* Soft golden yellow color */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for a polished look */
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
 .full-height-content h1 {
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  text-decoration: underline;
-  color: #ffcc00;
-  transition: all 0.3s ease;
+  margin-top: 30px;
 }
 
 .full-height-content h2 {
   font-size: 2.5rem;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
-  text-decoration: underline;
-  color: #ffcc00;
-  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-/* Styling for paragraphs */
 .full-height-content p {
-  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85); /* Slightly lighter text for readability */
+  font-size: 1.15rem;
   line-height: 1.8;
   max-width: 850px;
-  margin: 0 auto;
-  color: rgba(255, 255, 255, 0.85);
-  padding-bottom: 10px;
+  margin: 20px auto;
   letter-spacing: 0.5px;
+  text-align: justify;
   transition: all 0.3s ease;
 }
 
-/* Link styling */
+.full-height-content ol {
+  text-align: left;
+  margin-left: 30px;
+  list-style-type: decimal;
+}
+
+.full-height-content li {
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Link Styling */
 .full-height-content a {
-  color: #ffcc00;
+  color: #f5a623;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .full-height-content a:hover {
@@ -61,46 +84,21 @@
   text-decoration: underline;
 }
 
-/* Ordered list styling */
-.full-height-content ol {
-  list-style-type: decimal;
-  margin-left: 30px;
-  text-align: left;
-}
-
-.full-height-content li {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-/* Add some hover effect for headings */
-.full-height-content h1:hover, .full-height-content h2:hover {
-  color: #ffffff;
-  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
-  transform: translateY(-5px);
-}
-
-/* Smooth transitions */
-.full-height-content * {
-  transition: all 0.3s ease;
-}
-
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .full-height-content {
-    padding: 30px;
-  }
-
   .full-height-content h1 {
     font-size: 2.2rem;
   }
-  
+
   .full-height-content h2 {
     font-size: 1.8rem;
   }
 
   .full-height-content p {
     font-size: 1rem;
+  }
+
+  .hero-image, .section-image {
+    width: 90%;
   }
 }
