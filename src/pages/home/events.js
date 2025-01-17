@@ -8,7 +8,7 @@ function Events(){
             <div className="w-100 h-100 z-0 position-relative">
                 <img src="/image/Events.png" className="z-0 position-absolute  h-100 w-100" alt="About Us Background" />
                 <div className="z-1 postion-absolute w-100 h-auto d-flex align-items-start pt-5 justify-content-center">
-                    <Box
+                    <Box style={{paddingTop:"3rem"}}
                         component="form"
                         sx={{
                             '& .MuiTextField-root': {
@@ -25,7 +25,7 @@ function Events(){
                                         fontSize: '30px',
                                         lineHeight: '40px',
                                         overflow:'hidden',
-                                        height:'70vh'
+                                        height:'1px'
                                     }
                                 }
                             },
@@ -33,7 +33,7 @@ function Events(){
                                 color: '#00C2FF', // Change label color to match the glow
                                 position: 'absolute',
                                 left: '50%',
-                                top:'15px',
+                                top:'0.938rem',
                                 transform: 'translate(-50%, -50%)',
                                 backgroundColor: '#001330',
                                 paddingLeft: '10px',
@@ -89,7 +89,8 @@ function Events(){
                         </div>
                     </div>
                 </div>  */}
-                <div className='position-absolute text-white d-flex align-items-center' style={{ top: "15%", left: "17.5%", height: "70%", width: "65%" }}>
+                //Carousel Component
+                <div className='position-absolute text-white d-flex align-items-center' style={{ top: "10rem", left: "16.48%", height: "33rem", width: "67%"}}>
     <div className='bg-dark-blue h-100 w-100 d-flex flex-row align-items-center' style={{ borderRadius: "30px", backgroundColor: "#001F3F" }}> {/* Change to dark blue */}
         <div id="carouselExampleControls" className="carousel slide h-100 w-100" data-bs-ride="carousel">
             <div className="carousel-inner h-100">

@@ -1,20 +1,20 @@
-import { Col, Container,Row} from 'react-bootstrap';
-import React from 'react'
+import React from 'react';
+import { Col, Container, Row, Image } from 'react-bootstrap';
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Hero from './hero';
+import "./style.css";
+import Hero from '../home/hero';
 
 export default function About() {
   return (
     <div>
-      <Navbar/>
-      <Container fluid>
-      <Row className="align-items-start">
-        {/* <Col md={3}>This is About</Col> */}
-        <Hero/>
-      </Row>
+      <Navbar />
+      <Container fluid className="about-container">
+        <Row className="align-items-start">
+          <Hero/>
+        </Row>
       </Container>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};

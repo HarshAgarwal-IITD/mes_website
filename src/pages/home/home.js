@@ -14,6 +14,7 @@ function Home(){
                     <Hero/>
                     <AboutUs/>
                     <Notes/>
+                    <div style={{height:'23rem', backgroundColor:'#001331'}}></div>
                     <Events/>
                     <Footer/>
                 </div>

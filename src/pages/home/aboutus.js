@@ -56,7 +56,7 @@ Established to foster a spirit of collaboration and innovation, MES serves as a 
                                 InputProps={{
                                     readOnly: true,
                                     multiline: true,
-                                    rows: '10',
+                                    rows: '12',
                                 }}
                                 InputLabelProps={{
                                     shrink: true

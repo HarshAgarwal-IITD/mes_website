@@ -1,9 +1,16 @@
 import React from 'react';
+import { Col, Container, Row, Image } from 'react-bootstrap';
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 import "./style.css";
 
 export default function Hero() {
   return (
-    <div className="full-height-content">
+    <>
+    <Navbar />
+    <Container fluid className="about-container">
+      <Row className="align-items-start">
+      <div className="full-height-content">
       <h1>MECHANICAL ENGINEERING SOCIETY, IIT DELHI</h1>
       <img 
         src="/image/iitd_main.jpg" 
@@ -48,12 +55,12 @@ export default function Hero() {
         alt="Core Specializations" 
         className="section-image" 
       />
-      <ol>
+      <o>
         <li>Mechanical Design</li>
         <li>Production Engineering</li>
         <li>Thermal Engineering</li>
         <li>Industrial Engineering</li>
-      </ol>
+      </o>
 
       <h2>Industry Collaboration & Centers of Excellence</h2>
       <img 
@@ -77,8 +84,14 @@ export default function Hero() {
         The Department of Mechanical Engineering is located in Blocks II and III of the IIT Delhi campus, 
         housing modern labs and lecture halls dedicated to mechanical engineering education and research.
       </p>
-
-      <a href="/" className="know-more">Know more</a>
+      <p>To learn more:</p>
+      <a href="https://mech.iitd.ac.in/" className="know-more">Click Here</a>
     </div>
+
+        
+      </Row>
+    </Container>
+    <Footer />
+    </>
   );
 }
