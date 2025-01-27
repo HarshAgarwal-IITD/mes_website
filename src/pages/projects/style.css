@@ -1,0 +1,119 @@
+/* General Page Styling */
+.projects-page {
+    background-color: #0A1128;
+    color: white;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .projects-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-title {
+    font-size: 3rem; /* Retaining prominence */
+    font-weight: bold;
+    color: #00BFFF;
+    margin-bottom: 1rem;
+  }
+  
+  .projects-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .project-button {
+    border: 1px solid #00BFFF !important;
+    color: #00BFFF !important;
+    padding: 0.75rem 1.5rem !important; /* Further reduced padding */
+    font-size: 1rem !important; /* Further reduced font size */
+    background: transparent !important;
+    cursor: pointer;
+    transition: all 0.3s ease !important;
+  }
+  
+  .project-button:hover {
+    background-color: #00BFFF !important;
+    color: white !important;
+  }
+  
+  /* Grid Layout for Projects */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .project-card {
+    background-color: #1B3A57 !important;
+    color: white !important;
+    border-radius: 20px; /* Increased border radius for a more rounded look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    min-height: 450px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-card-content {
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+  
+  .project-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00BFFF !important;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #00BFFF;
+    padding-bottom: 0.5rem;
+  }
+  
+  .project-card-description {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    line-height: 1.3;
+  }
+  
+  .project-card-meta {
+    font-size: 0.9rem;
+    color: #B0C4DE !important;
+    margin-bottom: 0.1rem !important;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card-meta span {
+    font-weight: bold;
+  }
+  
+  .project-card-button {
+    background-color: #00BFFF !important;
+    color: white !important;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+  }
+  
+  .project-card-button:hover {
+    background-color: #00A5E3 !important;
+  }
+  

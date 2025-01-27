@@ -1,27 +1,25 @@
-import Navbar from "../../components/navbar"
-import Hero from "./hero"
+import Navbar from "../../components/navbar";
+import Hero from "./hero";
 import AboutUs from "./aboutus";
 import Footer from "../../components/footer";
 import Notes from "./notes";
 import Events from "./events";
 
-function Home(){
-
-    return(
-            <div className="vw-100 d-flex flex-row justify-content-center">
-                <div className="d-flex flex-column" style={{width:'100vw',borderLeft:"2px",borderRight:"2px"}}>
-                    <Navbar currentPage = "Home"/>
-                    <Hero/>
-                    <AboutUs/>
-                    <Notes/>
-                    <div style={{height:'23rem', backgroundColor:'#001331'}}></div>
-                    <Events/>
-                    <Footer/>
-                </div>
-            </div>
-    )
-
+function Home() {
+  return (
+    <div className="home-wrapper">
+      <div className="content-wrapper">
+        <Navbar currentPage="Home" />
+        <Hero />
+        <AboutUs />
+        <Notes />
+        <div style={{ height: "23rem", backgroundColor: "#001331" }}></div>
+        <Events />
+        <div style={{ height: "5rem", backgroundColor: "#001331" }}></div>
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 export default Home;
-

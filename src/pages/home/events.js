@@ -89,7 +89,7 @@ function Events(){
                         </div>
                     </div>
                 </div>  */}
-                //Carousel Component
+
                 <div className='position-absolute text-white d-flex align-items-center' style={{ top: "10rem", left: "16.48%", height: "33rem", width: "67%"}}>
     <div className='bg-dark-blue h-100 w-100 d-flex flex-row align-items-center' style={{ borderRadius: "30px", backgroundColor: "#001F3F" }}> {/* Change to dark blue */}
         <div id="carouselExampleControls" className="carousel slide h-100 w-100" data-bs-ride="carousel">

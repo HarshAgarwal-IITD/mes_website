@@ -33,33 +33,33 @@ function Notes() {
                         <Note
                             Name="Prof. P.M.V Subbarao"
                             Text={`<span style="font-size:1.7rem, text-align:center">Head of Mechanical Department</span><br />
-<span style="color: #F4A622; font-size: 1.5rem;">Areas of Interest:</span>
-Experimental Turbulence, Tomography, Power Generation Systems and I.C. Engines<br /><br />
-<span style="color: #F4A622; font-size: 1.5rem;">Courses and Modules:</span> 
-•MCL106 Fluid Mechanics<br />•MCL346 Turbomachinery<br /><br />
-<span style="color: #F4A622; font-size: 1.5rem;">Office:</span> Block 2, Room No. 264 and Block 3, Room No. 255.`}
+<span style="color: #00BFFF; font-size: 1.5rem;">Areas of Interest:</span>
+<span style="color: #B0C4DE;">Experimental Turbulence, Tomography, Power Generation Systems and I.C. Engines</span><br /><br />
+<span style="color: #00BFFF; font-size: 1.5rem;">Courses and Modules:</span> 
+<span style="color: #B0C4DE;">•MCL106 Fluid Mechanics<br />•MCL346 Turbomachinery</span><br /><br />
+<span style="color: #00BFFF; font-size: 1.5rem;">Office:</span> <span style="color: #B0C4DE;">Block 2, Room No. 264 and Block 3, Room No. 255.</span>`}
                             Image="/image/profSubbarao.jpg"
                             link="https://mech.iitd.ac.in/hod-profile/1"
                         />
                         <Note
                             Name="Prof. Anurag Goyal"
                             Text={`<span style="font-size:1.7rem, text-align:center">Faculty Coordinator - MES</span><br />
-<span style="color: #F4A622; font-size: 1.5rem;">Areas of Interest:</span>
-Thermo-fluid Systems, Heat Transfer, Refrigeration and Airconditioning, Waste-heat, Recovery, Thermal Energy Storage, Building Energy Efficiency, Water Purification and Desalination<br /><br />
-<span style="color: #F4A622; font-size: 1.5rem;">Courses and Modules:</span> 
-•MCL242 : Heat and Mass Transfer<br /><br />
-<span style="color: #F4A622; font-size: 1.5rem;">Office:</span> VA 10`}
+<span style="color: #00BFFF; font-size: 1.5rem;">Areas of Interest:</span>
+<span style="color: #B0C4DE;">Thermo-fluid Systems, Heat Transfer, Refrigeration and Airconditioning, Waste-heat, Recovery, Thermal Energy Storage, Building Energy Efficiency, Water Purification and Desalination</span><br /><br />
+<span style="color: #00BFFF; font-size: 1.5rem;">Courses and Modules:</span> 
+<span style="color: #B0C4DE;">•MCL242 : Heat and Mass Transfer</span><br /><br />
+<span style="color: #00BFFF; font-size: 1.5rem;">Office:</span> <span style="color: #B0C4DE;">VA 10</span>`}
                             Image="/image/profAnuragGoyal.jpg"
                             link="https://mech.iitd.ac.in/faculty-profile/198"
                         />
                         <Note
                             Name="Prof. Naresh Datla"
                             Text={`<span style="font-size:1.7rem, text-align:center">OCS Coordinator</span><br />
-<span style="color: #F4A622; font-size: 1.5rem;">Areas of Interest:</span>
-Fracture and fatigue, Adhesion and adhesives, Tissue-device interaction mechanics<br /><br />
-<span style="color: #F4A622; font-size: 1.5rem;">Courses and Modules:</span> 
-•MCL104 Solid Mechanics (Moodle)<br />•Mechanical Behaviour of Polymers and Composites (NPTEL)<br />•Engineering Graphics and Design (NPTEL)<br /><br />
-<span style="color: #F4A622; font-size: 1.5rem;">Office:</span> Block III, Room No. 367`}
+<span style="color: #00BFFF; font-size: 1.5rem;">Areas of Interest:</span>
+<span style="color: #B0C4DE;">Fracture and fatigue, Adhesion and adhesives, Tissue-device interaction mechanics</span><br /><br />
+<span style="color: #00BFFF; font-size: 1.5rem;">Courses and Modules:</span> 
+<span style="color: #B0C4DE;">•MCL104 Solid Mechanics (Moodle)<br />•Mechanical Behaviour of Polymers and Composites (NPTEL)<br />•Engineering Graphics and Design (NPTEL)</span><br /><br />
+<span style="color: #00BFFF; font-size: 1.5rem;">Office:</span> <span style="color: #B0C4DE;">Block III, Room No. 367</span>`}
                             Image="/image/profNareshDatla.jpg"
                             link="https://mech.iitd.ac.in/faculty-profile/183"
                         />

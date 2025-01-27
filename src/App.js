@@ -6,6 +6,7 @@ import Event from "./pages/event/event";
 import Team from "./pages/team/team";
 import About from "./pages/about/hero.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Project from "./pages/projects/projects.js";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path="/test" element={<Event/>}/>
       <Route path="/team" element={<Team/>}/>
       <Route path="/about" element={<About/>}/>
+      <Route path="/projects" element={<Project/>}/>
     </Routes>
     </BrowserRouter>
 
