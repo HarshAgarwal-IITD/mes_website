@@ -198,9 +198,9 @@ const ProjectsPage = () => {
         <header className="projects-header">
           <h1 className="projects-title">Mechanical Projects</h1>
           <div className="projects-buttons">
-            <Button variant="outlined" className="project-button" onClick={() => setType("all")}>
+            {/* <Button variant="outlined" className="project-button" onClick={() => setType("all")}>
               All Projects
-            </Button>
+            </Button> */}
             {/* <Button variant="outlined" className="project-button" onClick={() => setType("ongoing")}>
               Ongoing Projects
             </Button>

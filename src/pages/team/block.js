@@ -29,7 +29,7 @@
 export default function Block({ name, por, img }) {
     return (
         <div 
-            className="d-flex flex-row text-white p-3 gap-3 w-100 w-md-75 w-lg-450px" 
+            className="d-flex  flex-row text-white p-3 gap-3 w-100 w-md-75 w-lg-450px" 
             style={{
                 backgroundImage: "linear-gradient(#877FD1, #8C67AC)",
                 borderRadius: "15px",
@@ -49,10 +49,10 @@ export default function Block({ name, por, img }) {
                 />
             </div>
             <div className="d-flex flex-column gap-2">
-                <div className="fw-bold fs-5"> {/* Reduced font size for better mobile scaling */}
+                <div className="fw-bold fs-4"> {/* Reduced font size for better mobile scaling */}
                     {name}
                 </div>
-                <div className="fs-6 text-wrap text-break">
+                <div className=" fs-6 text-wrap text-break">
                     {por}
                 </div>
             </div>

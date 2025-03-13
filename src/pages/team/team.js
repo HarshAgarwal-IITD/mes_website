@@ -5,7 +5,7 @@ import Block from "./block";
 
 function Team() {
     return (
-        <div className="d-flex flex-column w-100 h-100 gap-0" style={{ backgroundColor:"#001331", fontFamily:"sarpanch" }}>
+        <div className="d-flex  flex-column w-100 h-100 gap-0" style={{ backgroundColor:"#001331", fontFamily:"sarpanch" }}>
             <Navbar currentPage = "Team"/>
             <Hero/>
             <div className="vw-100 d-flex flex-column display-6 ">
@@ -13,7 +13,7 @@ function Team() {
                 <div className="w-100" style={{textAlign:"center", color:"#7BD0FB"}} >
                     <p className="fw-bold d-inline-flex " style={{borderBottom:"1px solid",borderColor:"#7BD0FB"}}>Overall Coordinators</p>
                 </div>
-                <div className="d-flex w-100 flex-column gap-4 flex-wrap  align-items-center justify-content-evenly p-4">
+                <div className="d-flex w-100 flex-column flex-md-row gap-4 flex-wrap  align-items-center justify-content-evenly p-4">
                     <Block name={'prof . Anurag Goyal'} por={"Faculty Coordinator"}  img={'/image/profAnuragGoyal.jpg'}/>
                     <Block name={"Avni Goklani "} por={"Overall Coordinator"} img={'/image/Avni Goklani_Overall Coordinator .jpg'}/>
                 </div>
