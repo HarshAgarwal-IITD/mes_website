@@ -1,0 +1,180 @@
+/* 🔹 Meet Our Professors Section */
+.professor-section {
+    text-align: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.professor-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.underline {
+    width: 80px;
+    height: 3px;
+    background-color: #185adb;
+    margin: 8px auto;
+}
+
+/* 🔹 Professor Cards Container */
+.professor-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Default Card */
+.professor-card {
+    background: rgba(14, 31, 54, 0.85);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    width: 30%;
+    min-width: 320px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    height: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Expanded Card */
+.professor-card.expanded {
+    height: auto;
+    min-height: 450px;
+}
+
+/* Header Section */
+.professor-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔹 Professor Image */
+.professor-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 🔹 Name and Designation */
+.professor-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #32a4ff;
+    margin-bottom: 5px;
+}
+
+.professor-designation {
+    font-size: 1.1rem;
+    color: #a0c4ff;
+}
+
+/* 🔹 Expanded Section Styling */
+.professor-details {
+    padding: 15px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+}
+
+/* 🔹 Detail Headings */
+.detail-heading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #32a4ff;
+    margin-top: 10px;
+}
+
+/* 🔹 Detail Text */
+.detail-text {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+}
+
+/* 🔹 Bullet Points */
+.detail-list {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.detail-list-item {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* 🔽 Expand Button */
+.expand-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #32a4ff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 🔽 Rotate the Dropdown Arrow */
+.expand-btn.rotate svg {
+    transform: rotate(180deg);
+}
+
+/* 🔹 Visit Link */
+.visit-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #32a4ff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.visit-link:hover {
+    color: #1d8cd1;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+    .professor-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .professor-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .professor-card {
+        width: 90%;
+    }
+
+    .professor-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .professor-name {
+        font-size: 1.4rem;
+    }
+
+    .professor-designation {
+        font-size: 1rem;
+    }
+}

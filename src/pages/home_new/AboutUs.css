@@ -1,0 +1,262 @@
+/* 🌟 Global Styling */
+.about-section {
+    background-color: rgb(4, 19, 46);
+    color: #ffffff;
+    padding: 96px 16px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Reduced gap between sections */
+    align-items: center;
+}
+
+/* 🌟 Heading */
+.about-heading {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.about-heading-underline {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 4px;
+    background-color: #185adb;
+}
+
+/* 🌟 Description */
+.about-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+/* ✅ About Cards */
+.about-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+/* 🔹 Glassmorphism Effect */
+.about-card {
+    background: linear-gradient(135deg, rgba(8, 15, 30, 0.95), rgba(12, 25, 50, 0.95));
+    padding: 24px;
+    border-radius: 12px;
+    border: 2px solid rgba(50, 110, 200, 0.5);
+    box-shadow: 0 0 12px rgba(50, 110, 200, 0.15);
+    backdrop-filter: blur(8px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* ✅ Hover Effect */
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(50, 110, 200, 0.3);
+    background: linear-gradient(135deg, rgb(14, 38, 82), rgba(15, 30, 60, 1));
+}
+
+.about-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #5fa8ff;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-card-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+}
+
+/* ✅ Vision Card Color Variation */
+.vision-card {
+    border-left-color: #5fa8ff;
+}
+
+/* 🌟 Full-Width Stats Section */
+.about-stats {
+    width: 100vw;
+    background-color: #11213b;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    border-radius: 0;
+    animation: fadeIn 1s ease-in-out;
+    margin-left: calc(-50vw + 50%);
+}
+
+/* 🌟 Each Stat */
+.about-stat {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeUp 1s ease-in-out forwards;
+}
+
+/* 🔹 Adjusted Font Sizes & Bold Text */
+.about-stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #62b6ff;
+}
+
+.about-stat-label {
+    font-size: 1rem;
+    font-weight: bold;  /* 👈 Added to make text bold */
+    color: rgba(255, 255, 255, 0.9); /* Slightly brighter */
+}
+
+/* 🔥 Counter Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🌟 Initiatives Heading */
+.initiatives-heading {
+    text-align: center;
+    margin-bottom: 10px;  /* Reduced the gap */
+}
+
+.initiatives-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 5px; /* Reduce space below the heading */
+}
+
+.underline {
+    width: 80px;
+    height: 3px;
+    background-color: #185adb;
+    margin: 5px auto; /* Adjusted to align properly */
+}
+
+/* 🌟 Workshops, Competitions, and Research - 3 Cards in a Row */
+.about-images-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 0; /* Reduced top padding */
+}
+
+/* 🔹 Each Card Styling */
+.about-image-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%; /* ✅ Ensures consistent width for all cards */
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; /* ✅ Fixed height for equal sizing */
+}
+
+/* ✅ Image Fix: Ensure Consistent Size */
+.about-image {
+    width: 100%;
+    height: 200px; /* ✅ Forces uniform image size */
+    object-fit: cover;
+}
+
+/* 🔹 Text Styling */
+.about-image-content {
+    padding: 12px;
+    text-align: center;
+    flex-grow: 1; /* ✅ Ensures equal spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-image-title {
+    color: #4796ff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.about-image-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+/* ✅ RESPONSIVENESS */
+@media (max-width: 1024px) {
+    .about-images-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .about-image-card {
+        width: 45%; /* ✅ Adjusts to two per row */
+        height: auto; /* ✅ Maintain equal height */
+    }
+
+    .about-image {
+        height: 180px; /* ✅ Slightly reduced for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-images-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image-card {
+        width: 80%;
+        height: auto; /* ✅ Keep equal height */
+    }
+
+    .about-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-image-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-image {
+        height: 160px;
+    }
+}

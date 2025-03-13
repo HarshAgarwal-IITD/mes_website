@@ -7,6 +7,7 @@ import Team from "./pages/team/team";
 import About from "./pages/about/hero.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Project from "./pages/projects/projects.js";
+import Homenew from "./pages/home_new/homenew.js";
 
 
 function App() {
@@ -15,13 +16,14 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/home" element={<Home/>}/>
+      <Route path="/" element={<Homenew/>}/>
+      <Route path="/home_new" element={<Homenew/>}/>
       <Route path="/events" element={<Events/>}/>
       <Route path="/test" element={<Event/>}/>
       <Route path="/team" element={<Team/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/projects" element={<Project/>}/>
+      <Route path="/home_new" element={<Homenew/>}/>
     </Routes>
     </BrowserRouter>
 

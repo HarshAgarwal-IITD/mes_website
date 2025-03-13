@@ -1,0 +1,128 @@
+/* 🔹 Events Section */
+.carousel-section {
+    text-align: center;
+    position: relative;
+    width: 100vw;  /* Full width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Heading */
+.carousel-heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #4796ff;
+    margin: 0 auto;
+}
+
+/* 🔹 Full-Screen Carousel */
+.splide {
+    width: 100vw;  /* Full width */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Carousel Slide */
+.slide {
+    position: relative;
+    width: 100%;
+    height: 85vh; /* Ensures a consistent height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Styling */
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fits while maintaining aspect ratio */
+    transform: scale(1); /* Adjust scale (increase/decrease if needed) */
+}
+
+/* Dark Overlay (Subtle and Professional) */
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+    z-index: 1;
+}
+
+/* Title Overlay - Aesthetic & Professional */
+.slide-title {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* 🔹 Hover Effects */
+.slide:hover .slide-title {
+    transform: translateX(-50%) scale(1.02);
+    opacity: 1;
+}
+
+/* Navigation Arrows */
+.splide__arrow {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.splide__arrow:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+}
+
+/* Pagination Dots */
+.splide__pagination__page {
+    background: rgba(255, 255, 255, 0.5);
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+.splide__pagination__page.is-active {
+    opacity: 1;
+    background: #ffffff;
+    transform: scale(1.2);
+}
+
+/* 🔹 Responsive Design - Adjusting Height for Different Screens */
+@media (max-width: 1200px) {
+    .slide {
+        height: 75vh; /* Medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .slide {
+        height: 65vh; /* Mobile screens */
+    }
+
+    .slide-title {
+        font-size: 1.2rem;
+        width: 90%;
+        padding: 10px 15px;
+    }
+}

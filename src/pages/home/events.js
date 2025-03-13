@@ -103,7 +103,7 @@ function Events(){
                     <img src="/image/FreshersParty.JPG" className="d-block w-100 h-100" alt="..." />
                 </div>
                 <div className="carousel-item h-100">
-                <h3 className='bg-dark-blue text-center'>Departmental Trip</h3>
+                <h3 className='bg-dark-blue text-center'>Industrial Visit</h3>
                     <img src="/image/departmentalTrip.jpg" className="d-block w-100 h-100" alt="..." />
                 </div>
             </div>

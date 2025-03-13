@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row, Image } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import "./style.css";
@@ -7,91 +7,117 @@ import "./style.css";
 export default function Hero() {
   return (
     <>
-    <Navbar />
-    <Container fluid className="about-container">
-      <Row className="align-items-start">
-      <div className="full-height-content">
-      <h1>MECHANICAL ENGINEERING SOCIETY, IIT DELHI</h1>
-      <img 
-        src="/image/iitd_main.jpg" 
-        alt="IIT Delhi Main Building" 
-        className="hero-image" 
-      />
+      <style>
+        {`
+          .specialization-list {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+          }
 
-      <p>
-        Welcome to the Mechanical Engineering Society (MES) at IIT Delhi, where we believe that 
-        “Mechanical engineering is not just about machines; it's about making ideas move, turning 
-        concepts into reality, and designing the future with precision and innovation.”
-      </p>
+          .specialization-list ul {
+            list-style-type: none;
+            padding: 0;
+          }
 
-      <h2>Welcome to the Department of Mechanical Engineering, IIT Delhi</h2>
-      <img 
-        src="/image/research_lab.jpeg" 
-        alt="Mechanical Engineering Research" 
-        className="section-image" 
-      />
-      <p>
-        The Department of Mechanical Engineering at IIT Delhi is one of the oldest and largest 
-        departments within the institute. We are proud to be recognized globally for cultivating 
-        exceptional engineers known for their academic excellence and problem-solving capabilities.
-      </p>
+          .specialization-list li {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+          }
+        `}
+      </style>
 
-      <h2>Global Recognition</h2>
-      <img 
-        src="/image/global_ranking.jpeg" 
-        alt="Global Recognition" 
-        className="section-image" 
-      />
-      <p>
-        IIT Delhi's Department of Mechanical Engineering has achieved a prestigious global rank of 50 in 
-        the QS World University Rankings, placing it among the top 100 institutions worldwide. Our 
-        dedication to academic rigour, state-of-the-art research, and industry collaboration is reflected 
-        in our consistently improving global rankings.
-      </p>
+      <Navbar />
+      <Container fluid className="about-container">
+        <Row className="align-items-start">
+          <div className="full-height-content">
+            <h1>MECHANICAL ENGINEERING SOCIETY, IIT DELHI</h1>
+            <img 
+              src="/image/iitd_main.jpg" 
+              alt="IIT Delhi Main Building" 
+              className="hero-image" 
+            />
 
-      <h2>Our Core Specializations</h2>
-      <img 
-        src="/image/specialization.jpg" 
-        alt="Core Specializations" 
-        className="section-image" 
-      />
-      <o>
-        <li>Mechanical Design</li>
-        <li>Production Engineering</li>
-        <li>Thermal Engineering</li>
-        <li>Industrial Engineering</li>
-      </o>
+            <p>
+              Welcome to the Mechanical Engineering Society (MES) at IIT Delhi, where we believe that 
+              “Mechanical engineering is not just about machines; it's about making ideas move, turning 
+              concepts into reality, and designing the future with precision and innovation.”
+            </p>
 
-      <h2>Industry Collaboration & Centers of Excellence</h2>
-      <img 
-        src="/image/industry_collab.png" 
-        alt="Industry Collaboration" 
-        className="section-image" 
-      />
-      <p>
-        We have established multiple Centers of Excellence (CoEs) in collaboration with leading industries 
-        to tackle complex research problems. These CoEs offer students numerous opportunities to engage in 
-        impactful research and gain practical experience in addressing real-world challenges.
-      </p>
+            <h2>Welcome to the Department of Mechanical Engineering, IIT Delhi</h2>
+            <img 
+              src="/image/research_lab.jpeg" 
+              alt="Mechanical Engineering Research" 
+              className="section-image" 
+            />
+            <p>
+              The Department of Mechanical Engineering at IIT Delhi is one of the oldest and largest 
+              departments within the institute. We are proud to be recognized globally for cultivating 
+              exceptional engineers known for their academic excellence and problem-solving capabilities.
+            </p>
 
-      <h2>Facilities & Infrastructure</h2>
-      <img 
-        src="/image/facilities.jpg" 
-        alt="Campus Facilities" 
-        className="section-image" 
-      />
-      <p>
-        The Department of Mechanical Engineering is located in Blocks II and III of the IIT Delhi campus, 
-        housing modern labs and lecture halls dedicated to mechanical engineering education and research.
-      </p>
-      <p>To learn more:</p>
-      <a href="https://mech.iitd.ac.in/" className="know-more">Click Here</a>
-    </div>
+            <h2>Global Recognition</h2>
+            <img 
+              src="/image/global_ranking.jpeg" 
+              alt="Global Recognition" 
+              className="section-image" 
+            />
+            <p>
+              IIT Delhi's Department of Mechanical Engineering has achieved a prestigious global rank of 50 in 
+              the QS World University Rankings, placing it among the top 100 institutions worldwide. Our 
+              dedication to academic rigor, state-of-the-art research, and industry collaboration is reflected 
+              in our consistently improving global rankings.
+            </p>
 
-        
-      </Row>
-    </Container>
-    <Footer />
+            <h2>Our Core Specializations</h2>
+            <img 
+              src="/image/specialization.jpg" 
+              alt="Core Specializations" 
+              className="section-image" 
+            />
+
+            {/* Bullet Points Side by Side */}
+            <div className="specialization-list">
+              <ul>
+                <li>🔧 Mechanical Design</li>
+                <li>🏭 Production Engineering</li>
+              </ul>
+              <ul>
+                <li>🔥 Thermal Engineering</li>
+                <li>📊 Industrial Engineering</li>
+              </ul>
+            </div>
+
+            <h2>Industry Collaboration & Centers of Excellence</h2>
+            <img 
+              src="/image/industry_collab.png" 
+              alt="Industry Collaboration" 
+              className="section-image" 
+            />
+            <p>
+              We have established multiple Centers of Excellence (CoEs) in collaboration with leading industries 
+              to tackle complex research problems. These CoEs offer students numerous opportunities to engage in 
+              impactful research and gain practical experience in addressing real-world challenges.
+            </p>
+
+            <h2>Facilities & Infrastructure</h2>
+            <img 
+              src="/image/facilities.jpg" 
+              alt="Campus Facilities" 
+              className="section-image" 
+            />
+            <p>
+              The Department of Mechanical Engineering is located in Blocks II and III of the IIT Delhi campus, 
+              housing modern labs and lecture halls dedicated to mechanical engineering education and research.
+            </p>
+            <p>To learn more:</p>
+            <a href="https://mech.iitd.ac.in/" className="know-more">Click Here</a>
+          </div>
+        </Row>
+      </Container>
+      <Footer />
     </>
   );
 }
