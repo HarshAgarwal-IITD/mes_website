@@ -49,7 +49,8 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Ensures responsiveness */
-  gap: 0.5rem; /* Reduced gap to bring cards closer */
+  gap: 1rem; /* Reduced gap to bring cards closer */
+  width: 100%;
   justify-content: center;
   max-width: 1200px; /* Prevents excessive stretching */
   margin: auto; /* Centers the grid */
@@ -58,7 +59,9 @@
 /* Responsive Breakpoints */
 @media (min-width: 768px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    padding: 0 0.5rem; 
+  
   }
 }
 

@@ -201,12 +201,12 @@ const ProjectsPage = () => {
             <Button variant="outlined" className="project-button" onClick={() => setType("all")}>
               All Projects
             </Button>
-            <Button variant="outlined" className="project-button" onClick={() => setType("ongoing")}>
+            {/* <Button variant="outlined" className="project-button" onClick={() => setType("ongoing")}>
               Ongoing Projects
             </Button>
             <Button variant="outlined" className="project-button" onClick={() => setType("past")}>
               Completed Projects
-            </Button>
+            </Button> */}
           </div>
         </header>
 

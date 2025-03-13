@@ -86,6 +86,16 @@
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.5;
 }
+@media (max-width: 768px) {
+    .about-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        width: 100%; /* Take full width of the screen */
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
+    }
+}
 
 /* ✅ Vision Card Color Variation */
 .vision-card {
@@ -93,12 +103,12 @@
 }
 
 /* 🌟 Full-Width Stats Section */
-.about-stats {
+.about-stats {   
     width: 100vw;
     background-color: #11213b;
     padding: 12px 0;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     gap: 5%;
     border-radius: 0;
     animation: fadeIn 1s ease-in-out;
@@ -127,6 +137,7 @@
     font-size: 1rem;
     font-weight: bold;  /* 👈 Added to make text bold */
     color: rgba(255, 255, 255, 0.9); /* Slightly brighter */
+   
 }
 
 /* 🔥 Counter Animation */
